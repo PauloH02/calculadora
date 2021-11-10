@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Operacoes oper = new Operacoes();
         Scanner scan = new Scanner(System.in);
         System.out.println("Informe um Número: ");
         float v1 = scan.nextFloat();
@@ -12,7 +13,8 @@ public class Main {
         String sinal = scan.nextLine();
         System.out.println("Informe outro Número: ");
         float v2 = scan.nextFloat();
-Operações oper = new Operações(v1, v2);
+oper.setNumero1(v1);
+oper.setNumero2(v2);
         System.out.println("Resultado é: ");
 switch(sinal){
     case "+":
